@@ -1,13 +1,13 @@
 import psycopg2
 import os
 
-class Database():
+class Create_database():
     conn = psycopg2.connect(
         database="postgres",
         user='postgres',
-        password=os.environ['password'],
+        password= 'pwd', #os.environ['password'],
         host='localhost',
-        port=os.environ['port']
+        port='5432' #os.environ['port']
     )    
     conn.autocommit = True
     cursor = conn.cursor() # Creating coursor object
