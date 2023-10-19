@@ -1,0 +1,6 @@
+(
+  Id int primary key,
+  Profession varchar(40),
+  Company varchar(55)  
+)
+
