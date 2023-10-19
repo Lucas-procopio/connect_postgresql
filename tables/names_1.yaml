@@ -1,0 +1,5 @@
+(
+  id INT primary key,
+  name varchar NOT NULL
+)
+
